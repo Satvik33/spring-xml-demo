@@ -4,7 +4,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <context:annotation-config/>
+
     <bean id = "actor1" class = "com.stackroute.Actor">
         <constructor-arg name="name" index = "0" type = "java.lang.String" value = "ShahRukh Khan"></constructor-arg>
         <constructor-arg name="gender" index = "1" type = "java.lang.String" value = "Male"></constructor-arg>
@@ -28,5 +28,7 @@
     </bean>
     <bean id="lifecycledemo" class="com.stackroute.demo.BeanLifecycleDemoBean"
           init-method="customInit" destroy-method="customDestroy">
+    </bean>
+    <bean id = "processor" class = "com.stackroute.demo.BeanPostProcessorDemo">
     </bean>
 </beans>
