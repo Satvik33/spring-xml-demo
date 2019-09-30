@@ -7,6 +7,6 @@ public static void main(String args[])throws Exception{
 
     ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
     Movie movie = context.getBean("movie", Movie.class);
-    movie.callacting();
+    movie.callActing();
 }
 }
