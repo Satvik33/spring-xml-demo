@@ -23,7 +23,7 @@ public class Actor {
         this.age = age;
     }
 
-    public String acting(){
+    public String toString(){
         return(name + " is " + gender + " and is " +age+ " years old.");
     }
 }
