@@ -7,7 +7,7 @@ public class Movie {
         this.actor = actor;
         System.out.println("setter called");
     }
-    public void callacting(){
+    public void callActing(){
         actor.act();
     }
 }
