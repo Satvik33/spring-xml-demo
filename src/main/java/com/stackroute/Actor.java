@@ -17,7 +17,7 @@ public class Actor {
         this.age = age;
     }
 
-    public void act(){
+    public void toString(){
         System.out.println("Actor " + name + " of " + gender +" gender is " + age + " years old" );
     }
 }
