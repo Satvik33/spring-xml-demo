@@ -10,7 +10,7 @@ public class Movie {
         this.actor = actor;
     }
 
-    public void callingactor(){
-        System.out.println(actor.acting());
+    public void callingActor(){
+        System.out.println(actor.toString());
     }
 }
