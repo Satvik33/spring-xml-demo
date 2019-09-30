@@ -1,9 +1,15 @@
 package com.stackroute;
 
 public class Actor {
-    private String name;
-    private String gender;
-    private int age;
+private String name;
+private String gender;
+private int age;
+
+    public Actor(String name, String gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -17,7 +23,8 @@ public class Actor {
         this.age = age;
     }
 
-    public void act(){
-        System.out.println("Actor " + name + " of " + gender +" gender is " + age + " years old" );
+    public String acting(){
+        return(name + " is " + gender + " and is " +age+ " years old.");
     }
+
 }
