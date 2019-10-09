@@ -5,6 +5,15 @@ private String name;
 private String gender;
 private int age;
 
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
@@ -23,8 +32,5 @@ private int age;
         this.age = age;
     }
 
-    public String acting(){
-        return(name + " is " + gender + " and is " +age+ " years old.");
-    }
 
 }

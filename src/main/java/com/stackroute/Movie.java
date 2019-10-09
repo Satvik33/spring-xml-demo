@@ -10,7 +10,12 @@ public class Movie {
         this.actor = actor;
     }
 
-    public void callingactor(){
-        System.out.println(actor.acting());
+
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "actor=" + actor +
+                '}';
     }
 }
